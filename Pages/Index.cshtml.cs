@@ -16,6 +16,13 @@ public class IndexModel : PageModel
         _logger = logger;
     }
 
+    public string UserLoggedInName
+    {
+        get {
+            return "Dave";
+        }
+    }
+
     public void OnGet()
     {        
     }
