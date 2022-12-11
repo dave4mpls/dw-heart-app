@@ -6,12 +6,12 @@ namespace dwheartapp.Services;
 
 public static class UserInformationService
 {
-    public void SetupUserInformationService()
+    public static void SetupUserInformationService()
     {
 
     }
 
-    public string GetUserEmailAddress(HttpContext context)
+    public static string GetUserEmailAddress(HttpContext context)
     {
         String identifier = "X-MS-CLIENT-PRINCIPAL-NAME";
         IEnumerable<string> headerValues = context.Request.Headers.GetValues(identifier);
