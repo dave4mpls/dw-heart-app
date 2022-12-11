@@ -22,4 +22,9 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+// Configure application-specific services
+dwheartapp.;!!  // what happens with a syntax error?
+
+// Run the application
+
 app.Run();
