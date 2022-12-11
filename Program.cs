@@ -1,3 +1,5 @@
+using dwheartapp.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -23,7 +25,7 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 // Configure application-specific services
-dwheartapp.;!!  // what happens with a syntax error?
+UserInformationService.SetupUserInformationService();
 
 // Run the application
 

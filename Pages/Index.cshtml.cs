@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Runtime.InteropServices;
+using dwheartapp.Services;
 
 namespace dwheartapp.Pages;
 
@@ -19,7 +20,7 @@ public class IndexModel : PageModel
     public string UserLoggedInName
     {
         get {
-            return "Dave";
+            return UserInformationService.GetUserEmailAddress(HttpContext);
         }
     }
 
