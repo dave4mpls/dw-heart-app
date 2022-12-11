@@ -14,7 +14,7 @@ public static class UserInformationService
     public static string GetUserEmailAddress(HttpContext context)
     {
         string identifier = "X-MS-CLIENT-PRINCIPAL-NAME";
-        IEnumerable<string> headerValues = context.Request.Headers.GetValues(identifier);
+        IEnumerable<string> headerValues = context.Request.Headers[identifier];
         if (headerValues == null)
         {
             return "";
